@@ -1,0 +1,25 @@
+.greeting__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.greeting__container > .flex-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.greeting__container > .flex-container > .greeting {
+  font-size: 3rem;
+  color: #000;
+}
+
+.greeting__container > .person-input {
+  padding: 1rem;
+}
+
+.greeting__container > .person-input::placeholder {
+  font-size: 20px;
+}
