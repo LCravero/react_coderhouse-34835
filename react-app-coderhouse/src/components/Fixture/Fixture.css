@@ -1,0 +1,6 @@
+.fixture__container {
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
