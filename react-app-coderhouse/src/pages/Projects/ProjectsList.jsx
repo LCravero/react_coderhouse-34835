@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import { getAllProjects } from "../../services/index";
 import { isEmpty } from "../../utils/array";
@@ -21,14 +21,16 @@ export default function ProjectsList() {
         <div className="projects-list">
           {projects.map((project) => (
             <Card key={project.id}>
-              <NavLink
+              {/* Usar NavLink cuando se usan rutas anidadas de forma predeterminada */}
+              {/* <NavLink
                 className={({ isActive }) =>
                   isActive ? `project-${project.name}` : "project"
                 }
                 to={`/about/projects/${project.id}`}
               >
                 {project.name}
-              </NavLink>
+              </NavLink> */}
+              <Link to={`${project.id}`}>{project.name}</Link>
               <div className="project-tech-list">
                 {project.technologies.map((tech) => (
                   <p key={tech}>{tech}</p>

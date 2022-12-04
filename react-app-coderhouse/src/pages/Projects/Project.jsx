@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProject } from "../../services/index";
+import "./Project.css";
 
 export default function Project(props) {
   const [projectData, setProjectData] = useState(null);
@@ -11,7 +12,7 @@ export default function Project(props) {
       console.log(projectData);
       setProjectData(projectData);
     });
-  }, []);
+  }, [project]);
 
   return (
     <>
@@ -19,8 +20,8 @@ export default function Project(props) {
         <div className="project__container">
           <div className="project-name">{projectData.name}</div>
           <div className="project-detail">{projectData.detail}</div>
-          <div className="project-name">
-            <a href={projectData.repo.link}>{projectData.repo.Name}</a>
+          <div className="project-link">
+            <a href={projectData.repo.link}>{projectData.repo.link}</a>
           </div>
         </div>
       ) : (

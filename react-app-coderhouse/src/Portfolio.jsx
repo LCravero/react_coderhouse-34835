@@ -24,9 +24,9 @@ function Portfolio() {
               <Route path=":project" element={<Project />} />
             </Route>
           </Route>
-          {/* <Route path="/about/me" element={<Myself />} />
-          <Route path="/about/projects" element={<ProjectsList />} />
-          <Route path="/about/projects/:project" element={<Project />} /> */}
+          {/* <Route path="/about/me" element={<Myself />} /> */}
+          {/* <Route path="/about/projects" element={<ProjectsList />} /> */}
+          {/* <Route path="/about/projects/:project" element={<Project />} /> */}
           <Route caseSensitive path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
