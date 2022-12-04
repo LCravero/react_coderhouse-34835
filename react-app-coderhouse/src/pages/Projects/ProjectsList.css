@@ -1,0 +1,14 @@
+.projects-list__container {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.projects-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}

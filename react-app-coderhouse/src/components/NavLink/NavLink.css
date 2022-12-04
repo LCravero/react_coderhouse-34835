@@ -1,0 +1,9 @@
+.active-page {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.active-page:hover {
+  font-size: 1.3rem;
+  transition: ease;
+}

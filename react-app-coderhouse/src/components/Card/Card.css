@@ -1,0 +1,9 @@
+.card__container {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card__container:hover {
+  border: 3px solid lightblue;
+}
