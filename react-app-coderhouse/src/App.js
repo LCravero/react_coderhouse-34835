@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// import Posts from "./components/Posts/Posts";
+import { useState } from "react";
+// import Post from "./components/Post/Post";
+import Comment from "./components/Comment/Comment";
+import "./App.css";
 
 function App() {
+  const [postId, setPostId] = useState(1);
+
+  const onClickHandler = () => setPostId(postId + 1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={onClickHandler}>New Post</button>
+      {/* <Post id={postId} /> */}
+      <Comment postId={postId} />
     </div>
   );
 }
