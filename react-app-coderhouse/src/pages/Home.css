@@ -1,0 +1,18 @@
+.home-page__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.my-image {
+  height: 200px;
+  width: 200px;
+  background-color: purple;
+  border-radius: 5px;
+}
+
+.header > .welcome {
+  font-size: 2rem;
+}

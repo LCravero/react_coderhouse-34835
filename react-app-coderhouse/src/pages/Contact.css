@@ -1,0 +1,8 @@
+.contact__container {
+  text-align: left;
+}
+
+.contact__container > .title {
+  font-size: 2rem;
+  font-weight: bold;
+}

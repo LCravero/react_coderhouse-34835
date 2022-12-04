@@ -1,0 +1,19 @@
+.project__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 3px solid purple;
+  border-radius: 4px;
+}
+
+.project-name,
+.project-detail,
+.project-link {
+  text-align: left;
+}
+
+.project-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
