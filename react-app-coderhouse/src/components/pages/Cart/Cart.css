@@ -1,0 +1,54 @@
+.cart__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.order-items__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.items-header {
+  padding: 3px;
+  display: flex;
+  gap: 9rem;
+  background-color: #2c324e;
+}
+
+.items-header > span {
+  font-weight: bold;
+  color: white;
+}
+
+.order-total {
+  display: flex;
+  gap: 1rem;
+}
+
+.customer-order-data__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.customer-order-data {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.error-message__container {
+  width: 100%;
+  text-align: center;
+}
+
+.error-message__container .error-message {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(157, 8, 8);
+}
