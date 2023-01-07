@@ -1,0 +1,11 @@
+.drum-detail__container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  grid-area: "body";
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
