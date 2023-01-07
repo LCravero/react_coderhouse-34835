@@ -1,0 +1,6 @@
+.header__container {
+  height: 100%;
+  width: 100%;
+  background: #2c324e;
+  grid-area: "header";
+}
